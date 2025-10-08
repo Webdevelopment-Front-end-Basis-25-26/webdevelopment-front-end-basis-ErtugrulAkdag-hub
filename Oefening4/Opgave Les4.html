@@ -1,56 +1,72 @@
 <!DOCTYPE html> 
 <html lang="nl">
-    <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Opgave Les4 </title>
 </head>
 <body>
-<p> 
-    <div style="border: 1px solid black; padding: 10px;">
-    <label for="naam">Naam:</label>
-<input type="text" id="naam" name="naam" placeholder="verplicht ingevuld">
- <label for="naam">Voornaam:</label> <input type="text" id="naam" name="naam" placeholder="">
-<br>
+<form>
+<fieldset>
+    <legend>Persoonlijke gegevens</legend>
+    <table>
+     <tbody>
+      <tr> 
+<td style="border: 1px solid black; padding: 10px;"></td>
+      <td><label for="naam">Naam:</label></td>
+      <td><input type="text" id="naam" name="naam" placeholder="verplicht ingevuld"></td>
+ 
+      <td>    <label for="voornaam">Voornaam:</label></td> 
+      <td><input type="text" id="voornaam" name="voornaam" placeholder=""></td>  
+
+
  <label for="adres">Adres:</label>
 <input type="text" id="adres" name="adres" placeholder=""> 
 <br>
+
 <label for="postcode">Postcode:</label>
 <input type="text" id="postcode" name="postcode" placeholder="">  
 <br>
-<label for="Email adres">Email adres</label>  
-<input type="email" id="Email adres" name="Email adres" placeholder="@student.ucll.be">
+
+<label for="email">Email adres:</label>  
+<input type="email" id="email" name="email" placeholder="@student.ucll.be">
 <br>
+
 <label for="website">Website:</label>
 <input type="url" id="website" name="website" placeholder="http://www.google.be">
 <br>
-<label for="Geboortedatum">Geboortedatum:</label>
-<input type="number" id="Geboortedatum" name="Geboortedatum" placeholder="dd/mm/jjjj" style="margin: 50;"  >
-<label for="Aantal kinderen">Aantal kinderen:</label>
-<input type="number" id="Leeftijd" name="Aantal kinderen" placeholder="">
+
+
+<label for="geboortedatum">Geboortedatum:</label>
+<input type="date" id="geboortedatum" name="geboortedatum" style="margin: 50px;">
+
+<label for="aantalKinderen">Aantal kinderen:</label>
+<input type="number" id="aantalKinderen" name="aantalKinderen" placeholder="">
 <br>
+
 <label for="geslacht">Geslacht:</label>
-  <input type="radio" name="geslacht" value="man"> Man
-</label>
-<label>
-  <input type="radio" name="geslacht" value="vrouw"> Vrouw
-</label>
+  <input type="radio" id="geslacht" name="geslacht" value="man"> 
+
+
+
+
 <br>
-<label for="Optie 1 ">Wij mogen u per e-mail contacteren</label>
-<input type="checkbox" id="Optie 1" name="Optie 1 " value="">
-<label for="Optie 2">Wij mogen u per post contacteren</label>
-<input type="checkbox" id="Optie 2" name="Optie 2" value="">
-</p>
+<label for="Optie1">Wij mogen u per e-mail contacteren</label>
+<input type="checkbox" id="Optie1" name="Optie1" value="">
+<label for="Optie2">Wij mogen u per post contacteren</label>
+<input type="checkbox" id="Optie2" name="Optie2" value="">
+
 </div>
-<p>
+
+</fieldset>
+
     <div style="border: 1px solid black; padding: 10px;">
 <label for="Bestand">Uploaden:</label> 
-    <input type="button" value="Bestand kiezen">
+    <input type="button" id="Bestand" value="Bestand kiezen">
 
-<label for="naam">Paswoord:</label>
-<input type="text" id="naam" name="naam" placeholder="">
+<label for="bestand">Paswoord:</label>
+<input type="text" id="bestand" name="bestand" placeholder="">
 <br>
 
 <span style="display:inline-block; margin-right:20px;">
@@ -72,7 +88,7 @@
   </select>
 </span>
 
-<label for="Zoeken">Zoeken:</label> 
+<label for="Opmerkingen">Zoeken:</label> 
 <input type="text" id="Opmerkingen" name="Opmerkingen" placeholder="" style="width: 30px; height: 10px;">
 <br>
         <label for="kleur">Achtergrondkleur:</label>
@@ -83,16 +99,11 @@
          
 
 
-</p>
+
 </div>
-<p>
+
  <span style="display:inline-block; margin-right:10px;"><button>Verstuur</button></span>
           <span style="display:inline-block;"><button>Maak leeg</button></span>
-
-</p>
-
-
-
-
+</form>
 </body>
 </html>
