@@ -10,57 +10,66 @@
 <form>
 <fieldset>
     <legend>Persoonlijke gegevens</legend>
-    <table>
+    <table style="border: 1px solid black; border-collapse: collapse;">
      <tbody>
-      <tr> 
-<td style="border: 1px solid black; padding: 10px;"></td>
-      <td><label for="naam">Naam:</label></td>
+      
+
+    <tr> <td><label for="naam">Naam:</label></td>
       <td><input type="text" id="naam" name="naam" placeholder="verplicht ingevuld"></td>
  
       <td>    <label for="voornaam">Voornaam:</label></td> 
-      <td><input type="text" id="voornaam" name="voornaam" placeholder=""></td>  
+      <td><input type="text" id="voornaam" name="voornaam" placeholder=""></td>  </tr> 
 
 
- <label for="adres">Adres:</label>
-<input type="text" id="adres" name="adres" placeholder=""> 
-<br>
-
-<label for="postcode">Postcode:</label>
-<input type="text" id="postcode" name="postcode" placeholder="">  
-<br>
-
-<label for="email">Email adres:</label>  
-<input type="email" id="email" name="email" placeholder="@student.ucll.be">
-<br>
-
-<label for="website">Website:</label>
-<input type="url" id="website" name="website" placeholder="http://www.google.be">
-<br>
+ <tr><td><label for="adres">Adres:</label></td>
+   <td colspan="3"> <input type="text" id="adres" name="adres" placeholder=""> </td></tr>
 
 
-<label for="geboortedatum">Geboortedatum:</label>
-<input type="date" id="geboortedatum" name="geboortedatum" style="margin: 50px;">
+<tr><td><label for="postcode">Postcode:</label></td>
+<td><input type="text" id="postcode" name="postcode" placeholder=""> </td>
+<td><label for="gemeente">Gemeente:</label></td>
+<td><input type="text" id="gemeente" name="gemeente" placeholder=""></td>
 
-<label for="aantalKinderen">Aantal kinderen:</label>
-<input type="number" id="aantalKinderen" name="aantalKinderen" placeholder="">
-<br>
+</tr> 
 
-<label for="geslacht">Geslacht:</label>
-  <input type="radio" id="geslacht" name="geslacht" value="man"> 
+
+<tr><td><label for="email">Email adres:</label>  </td>
+ <td colspan="3" > <input type="email" id="email"  name="email" placeholder="@student.ucll.be"></td></tr>
+
+
+<tr><td> <label for="website">Website:</label></td>
+<td colspan="3"><input type="url" id="website" name="website" placeholder="http://www.google.be"></td></tr>
 
 
 
+<tr> <td> <label for="geboortedatum">Geboortedatum:</label></td>
+<td><input type="date" id="geboortedatum" name="geboortedatum" style="margin: 50px;"></td>
 
-<br>
-<label for="Optie1">Wij mogen u per e-mail contacteren</label>
-<input type="checkbox" id="Optie1" name="Optie1" value="">
+<td><label for="aantalKinderen">Aantal kinderen:</label></td>
+<td><input type="number" id="aantalKinderen" name="aantalKinderen" placeholder=""> </td></tr>
+
+
+<tr>
+  <td><label for="geslachtMan">Geslacht:</label></td>
+  <td>
+    <input type="radio" id="geslachtMan" name="geslacht" value="man">
+    <label for="geslachtMan">Man</label>
+    <input type="radio" id="geslachtVrouw" name="geslacht" value="vrouw">
+    <label for="geslachtVrouw">Vrouw</label>
+  </td>
+
+<td><label for="Optie1">Wij mogen u per e-mail contacteren</label>
+<input type="checkbox" id="Optie1" name="Optie1" value=""></td>
+
 <label for="Optie2">Wij mogen u per post contacteren</label>
-<input type="checkbox" id="Optie2" name="Optie2" value="">
-
+  <input type="checkbox" id="Optie2" name="Optie2" value="">
+</table>
 </div>
-
+<table>
 </fieldset>
 
+<fieldset>
+<legend>Opdracht</legend>
     <div style="border: 1px solid black; padding: 10px;">
 <label for="Bestand">Uploaden:</label> 
     <input type="button" id="Bestand" value="Bestand kiezen">
@@ -88,22 +97,22 @@
   </select>
 </span>
 
-<label for="Opmerkingen">Zoeken:</label> 
-<input type="text" id="Opmerkingen" name="Opmerkingen" placeholder="" style="width: 30px; height: 10px;">
-<br>
-        <label for="kleur">Achtergrondkleur:</label>
-            <input type="color" id="kleur" name="kleur">
-        <label for="slider">Afwijking:</label>
-            <input type="range" id="slider" name="slider" min="0" max="255" value="100">
-<br>
-         
+<td><tr><label for="Opmerkingen">Zoeken:</label> 
+<input type="text" id="Opmerkingen" name="Opmerkingen" placeholder="" style="width: 30px; height: 10px;"></td></tr>
 
+        <tr><td><label for="kleur">Achtergrondkleur:</label></td>
+           <td> <input type="color" id="kleur" name="kleur"></td>
+       <td> <label for="slider">Afwijking:</label></td>
+           <td> <input type="range" id="slider" name="slider" min="0" max="255" value="100"></td></tr>
+
+         
+</table>
 
 
 </div>
 
  <span style="display:inline-block; margin-right:10px;"><button>Verstuur</button></span>
-          <span style="display:inline-block;"><button>Maak leeg</button></span>
+          <span style="display:inline-block;"><button>Maak leeg</button></span></fieldset>
 </form>
 </body>
 </html>
