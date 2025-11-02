@@ -3,11 +3,11 @@
 
 <head>
 	<title>Oefening CSS Selectoren</title>
-	<link rel="stylesheet" href="oefening7.css">
+	<link rel="stylesheet" href="Oefening7.css">
 </head>
 
 <body>
-	<header >
+	<header id="boven">
 		<h2><a href="#beneden">Lorem Ipsum</a></h2>
 		<nav>
 			<a href="#">Koppeling 1</a>
@@ -78,13 +78,13 @@
 	<form action="#">
 		<label>Naam <input type="text" name="naam"></label><br>
 		<label>Voornaam <input type="text" name="voornaam"></label><br>
-		<input type="radio" name="tevredenheid" value="tevreden" ><label for="tevreden">Ik ben
+		<input type="radio" name="tevredenheid" value="tevreden" id="tevreden"><label for="tevreden">Ik ben
 			tevreden</label>
-		<input type="radio" name="tevredenheid" value="ontevreden" ><label for="ontevreden">Ik ben niet
+		<input type="radio" name="tevredenheid" value="ontevreden" id="ontevreden"><label for="ontevreden">Ik ben niet
 			tevreden</label>
 	</form>
 
-	<a href="#boven" >Ga terug naar boven</a>
+	<a href="#boven" id="beneden">Ga terug naar boven</a>
 
 	<footer>
 		<p>Designed by Mimi Willems</p>
@@ -96,10 +96,7 @@
 				href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a
 				href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
 				3.0 BY</a></p>
-				
-			</footer>
-
-
+	</footer>
 </body>
 
 </html>
