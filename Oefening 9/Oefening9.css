@@ -1,0 +1,180 @@
+*{
+
+ margin: 0;
+
+ padding: 0;
+
+}
+
+body {
+font-family: Verdana, Tahoma, sans-serif;
+background-color: #317082;
+
+}
+input{
+
+ font-family: inherit;
+ font-size: 1em;
+
+}
+#container{
+  width: 945px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0px auto;
+  background-color: #ffffff;
+}
+h1{
+    background-color: #317082;
+    color: white;
+    font-weight: normal;
+    padding: 10px 20px;
+    text-shadow: black 1px 1px 2px;
+    border-radius: 10px ;
+    box-shadow: 2px 2px 2px #317082;
+    margin-bottom: 20px;
+}
+nav li{
+    list-style: none;
+    background-color: #317082;
+    display: inline;
+
+    padding: 5px 10px;
+    border-top-left-radius: 10px 5px;
+    border-top-right-radius: 10px 5px;
+    border-bottom-left-radius: 10px 5px;
+    border-bottom-right-radius: 10px 5px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav ol:hover{
+  background-color: #0d3b52;
+  display: inline;;
+}
+nav ol:hover a{
+    color: #0d3b52;
+}
+nav{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+nav li:hover a{
+    color: white;
+}
+
+#banner{
+  background-image: url('images/banner.jpg');
+  width: 905px;
+  height: 214px;
+  margin-bottom: 20px;
+}
+
+#banner p{
+  box-sizing: border-box;
+  padding: 20px;
+  padding-right:645px ;
+
+  color:white;
+}
+
+#banner p::first-letter{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h2{
+font-size: 1.4em;
+    font-weight: normal;
+    font-style: italic;
+ background-color: hsl(192, 45%, 35%) ;
+    color: white;
+ padding: 5px;
+ border-style: outset;
+    border-width: 5px;
+ border-color: hsl(192, 45%, 25%);
+ border-top-right-radius: 20px;
+}
+
+#content p{
+  border-bottom: hsl(192, 45%, 25%) dotted 1.25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+table{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-width: 4px;
+  border-color: hsl(192, 45%, 25%);
+  border-style: ridge;
+  border-collapse: collapse;
+}
+
+table th , table td{
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsl(192, 45%, 25%);
+  padding:5px;
+}
+
+table th{
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+table tr:hover{
+  background-color: rgba(49, 112, 130, 50%);
+}
+
+fieldset{
+  border-style: double;
+  padding: 20px;
+  border-radius: 10px;
+  border-color: hsl(192, 45%, 35%);
+}
+
+legend{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-style: double;
+  border-radius: 10px;
+  border-color: hsl(192, 45%, 35%);
+}
+
+input[type="text"], input[type="submit"]{
+  border-color: hsl(192, 45%, 25%);
+  border-width: 2px;
+  padding: 5px;
+  border-style: solid;
+}
+
+input[type="submit"]{
+  border-radius: 10px;
+  background-color: #317082;
+  font-weight: bold;  
+  box-shadow: #317082 2px 2px 2px;
+  text-transform:capitalize;
+}
+
+input [type="text"]{
+  box-shadow: inset black 0px 0px 4px;
+  margin: 5px;
+  border-top-left-radius: 10px 5px;
+  border-top-right-radius: 10px 5px;
+  border-bottom-left-radius: 10px 5px;
+  border-bottom-right-radius: 10px 5px;
+}
+
+input[type='text']:hover{
+  box-shadow: inset black 0px 0px 8px;
+  background-color: rgba(49, 112, 130, 50%);
+
+}
