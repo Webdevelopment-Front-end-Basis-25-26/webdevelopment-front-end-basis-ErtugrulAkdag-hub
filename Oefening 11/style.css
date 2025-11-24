@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: rgb(255, 199, 1, 0.4);
+}
+
+.container {
+  margin: 0px auto;
+  min-width: 600px;
+  max-width: 1092px;
+  background-color: white;
+}
+
+header {
+    min-height: 300px;
+    width: 100%;
+    background-image: url("images/black_friday.jpg");
+    background-position: center;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    padding: 0px;
+    z-index: 10;
+}
+
+header h1 {
+    position: absolute;
+    top: 40px;
+    right: 140px;
+    max-width: 40%;
+    font-family: "Lucida Handwriting", Tahoma, Arial, sans-serif;
+    font-weight: bold;
+    color: #00222e;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 1px #ffc701;
+}
+
+button {
+     background-color: #f08f00;
+    color: #00222e;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #00222e;
+    box-shadow: 3px 3px 3px #00222e;
+    top: 20px;
+    left: 20px;
+    position: fixed;
+    z-index: 10;
+}
+
+.uitleg{
+    background-color: #FFFFFF;
+    color: #00222e;
+    font-size: 0.75em;
+    width: 14em;
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #00222e;
+    font-weight: normal;
+    top: 80%;
+    left: 20%;
+    position: absolute;
+    visibility: hidden;
+}
+button:hover .uitleg{
+    visibility: visible;
+}
+
+nav {
+    margin: 10px;
+    z-index: 5;
+}
+ 
+nav a, nav li, aside a, aside li {
+    text-decoration: none;
+    list-style-type: none;
+    color: #00222e;
+}
+nav a{
+    background-color: #f08f00;
+    width: 140px;
+    padding: 10px;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #ffc701;
+}
+
+nav > ol {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav ol li ol {
+    display: none;
+    z-index: 5;
+    position: absolute;
+}
+nav ol li:hover ol {
+    display:block;
+    background-color: #f08f00;
+}
+
+.content-container {
+    display: block;
+    position: relative;
+}
+
+aside{
+    position:absolute;
+    right: 10px;
+}
+
+aside a {
+    background-color: #ffc701;
+    display: inline-block;
+    padding : 10px;
+    width: 120px;
+    border: #00222e 1px solid;
+    right: 10px;
+}
+
+aside ul li {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    position: relative;
+}
+
+
+aside ul li ul {
+    display: none;
+    position:absolute;
+    right: 120px;
+    top:0px;
+}
+aside ul li:hover ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffc701;
+    align-items: flex-start;
+}
+
+aside > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#content{
+    margin-right: 140px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#content p{
+    margin: 5px auto;
+}
+
+footer{
+    font-size: 0.75em;
+    font-style: italic;
+    text-align: right;
+    padding: 5px;
+    width: 100%;
+    background-image: url("images/black_friday.jpg");
+    background-position: bottom;
+    background-color: white;
+}
