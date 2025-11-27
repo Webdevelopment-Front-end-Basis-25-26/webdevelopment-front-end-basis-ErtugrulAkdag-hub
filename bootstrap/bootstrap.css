@@ -1,0 +1,12 @@
+@media (min-width: 768px) {}
+#jumbotron {
+    background: grey url("beaded-2137080_1280.jpg") ;
+    background-color: white;
+}
+
+
+@media (min-width: 1200px) {}
+  #jumbotron {
+    background: grey url("beaded-2137080_1920.jpg") ;
+    background-color: white;
+  }

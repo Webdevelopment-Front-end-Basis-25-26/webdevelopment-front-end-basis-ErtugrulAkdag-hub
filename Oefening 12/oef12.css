@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ 
+body {
+    font-family: Montserrat, Tahoma, Verdana, sans-serif;
+    background-color: hsl(0, 0%, 85%);
+}
+ 
+ 
+.container {
+    background-color: white;
+    width: 960px;
+    margin: auto;
+    
+    
+}
+ 
+ 
+.content {
+    padding: 10px;
+}
+.content h2 {
+    font-size: 1.4em;
+    font-weight: normal;
+    color: white;
+    background-color: rgb(151,151,141);
+    padding: 5px;
+
+    border: 5px outset rgb(91,90,77);
+   
+
+    transition: transform 0.5s;
+}
+.content h2:hover {
+    transform: scale(1.1);
+}
+
+table {
+    margin: 20px 0px;
+    border: 5px ridge rgb(91, 90, 77);
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid rgb(91, 90, 77);
+    padding: 5px;
+    
+}
+
+tr:hover td {
+    background-color: rgba(151,151,141,0.5);
+}
+
+header {
+    height: 100px;
+    padding: 20px;
+    background-image: url("images/header.gif");
+    background-repeat: repeat-x;
+    position: relative;
+}
+
+header h1 {
+    color: white;
+    font-size: 50px;
+    transition: transform 1s;
+}
+
+header:hover h1 {
+    transform: translateX(450px);
+}
+
+
+.image-hover-over {
+    opacity: 0;
+    width: 192px;
+    height: 73px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    transition: opacity 1s;
+}
+
+
+header:hover .image-hover-over {
+    opacity: 1;
+}
+
+
+.image-hover-over img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.6s;
+    
+}
+
+
+.image-hover-over:hover img {
+    opacity: 0.3;
+}
+
+.image-hover-over div {
+    background-color: #002757;
+    color: white;
+    
+    top: 50%;
+    left: 50%;
+    padding: 10px 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);  
+    
+    
+}
+
+
+.image-hover-over:hover div {
+    opacity: 1;
+}
+
+
+body > p {
+    background-color: #0066DD;
+    
+    color: #DD6600; padding: 10px;
+   overflow: hidden;  
+   height: 40px;
+    
+
+    position: fixed;
+    top: 0;
+   right: 0; 
+   left: 0;
+    
+
+    z-index: 999;
+}
+
+body > p span {
+    position: relative;
+    width: 100%; 
+    display: inline-block;
+     animation: slidetext 25s linear infinite;
+   
+    
+}
+
+@keyframes slidetext {
+    0% {transform: translateX(-10%); }
+    100% { transform: translateX(110%); }
+}
+
+nav {
+    margin: 10px;
+}
+ 
+nav a {
+    
+    text-decoration: none;
+    background-color: #002757;
+    color: white;
+     display: inline-block;  
+    padding: 5px 10px;
+   
+}
+
+nav a:hover {
+    animation: rotate 0.4s ease-in-out;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(6deg);}
+    50% {transform: rotate(-6deg);}
+    75% {transform: rotate(4deg);}
+    100% {transform: rotate(0deg);}
+}
